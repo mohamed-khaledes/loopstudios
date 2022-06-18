@@ -1,0 +1,220 @@
+body{
+    font-family: 'Alata', sans-serif;
+    /* font-family: 'Josefin Sans', sans-serif; */
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --white :hsl(0, 0%, 100%);
+    --Black:hsl(0, 0%, 0%);
+    --dark-gray :hsl(0, 0%, 55%);
+    --very-dark-gray:hsl(0, 0%, 41%);
+}
+/*global*/
+ul{
+    list-style:none;
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    padding: 150px;
+    height: 100%;
+}
+h1,h2,h3,h4{
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+}
+/*global*/
+/*start header*/
+header{
+    background-image:url(../loopstudios-landing-page-main/images/desktop/image-hero.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height:calc(100vh - 24px);
+    background-position: center;
+}
+header .container{
+    padding: 150px;
+    height: 100%;
+}
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header nav .logo{
+    z-index: 100;
+}
+header nav .logo h1{
+    padding: 0;
+    margin: 0;
+    font-size: 40px;
+    color: var(--white);
+}
+header nav .menu{
+    z-index: 100;
+}
+header nav .menu svg{
+    font-size: 25px;
+    color: var(--white);
+    cursor: pointer;
+}
+header nav .navbar ul{
+    display: flex;
+    align-items: center;
+}
+header nav .navbar ul li{
+    margin-right: 20px;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 18px;
+}
+header nav .navbar ul li:hover{
+    background: #2196f3;
+}
+header nav .navbar ul li a{
+    color: var(--white);
+}
+header .caption{
+    margin-top: 22vh;
+    border: 2px solid var(--white);
+    padding: 40px 20px 0px;
+    width: 600px;
+    height: 300px;
+}
+header .caption p{
+    font-size: 75px;
+    padding: 0px;
+    margin: 0;
+    line-height: 1.1;
+    color: var(--white);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+/*End header*/
+/*start leader*/
+.leader .container{
+    display: flex;
+    align-items: center;
+}
+.leader .container .img{
+
+}
+.leader .container .text{
+    background: var(--white);
+    padding: 50px;
+    height: 100%;
+    position: relative;
+    left: -100px;
+    top: 125px;
+}
+.leader .container .text h2{
+    font-size: 40px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.leader .container .text p{
+    color: var(--dark-gray);
+    font-size: 15px;
+}
+/*end leader*/
+/*start creations*/
+.creations .title{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 10px 30px;
+
+}
+.creations .title h2{
+    font-size: 40px;
+    font-weight: 300;
+}
+.creations .title a{
+    border: 2px solid var(--dark-gray);
+    padding: 5px 30px;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: var(--Black);
+    transition: 0.5s;
+}
+.creations .title a:hover{
+    background-color: #2196f3;
+    border: 2px solid #2196f3;
+    color: var(--white);
+}
+.creations .boxes{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    gap: 20px;
+}
+.creations .container .boxes .box{
+    background-size: cover;
+    height: 450px;
+    transition: 0.3s;
+    overflow: hidden;
+    position:relative;
+}
+.creations .container .boxes .box:hover img{
+    transform: rotate(1deg) scale(1.1);
+}
+.creations .container .boxes .box img{
+    transition: 0.3s;
+}
+.creations .container .boxes .box p{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 35px;
+    color: var(--white);
+    text-transform: uppercase;
+    font-family: 'Josefin Sans', sans-serif;
+}
+/*end creations*/
+/*footer*/
+footer{
+    height: 55px;
+    background: var(--Black);
+    color: white;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .right ul {
+    display: flex;
+}
+footer .right ul li {
+    margin-right: 30px;
+    transition: 0.3s;
+    font-size: 15px;
+}
+footer .right ul li a{color: var(--dark-gray);
+    transition: 0.3s;
+}
+footer .right ul li:hover a{
+    color: var(--white);
+}
+footer .left .icons svg{
+    margin-right: 15px;
+    font-size: 25px;
+    transition: 0.3s;
+    color: var(--dark-gray);
+}
+footer .left .icons svg:hover{color: var(--white);}
+footer .left p{
+    font-size: 15px;
+    color: var(--dark-gray);
+}
+/*footer*/
